@@ -1,6 +1,6 @@
 {
   "name": "advisor-worker-orchestration",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "mcpServers": "./config/claude-mcp.json",
   "description": "Routes advisor and worker mailbox changes into exact Claude Code sessions with role-based identities.",
   "author": {

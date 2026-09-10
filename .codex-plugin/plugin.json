@@ -1,6 +1,6 @@
 {
   "name": "codex-cc-advisor-worker-orchestration",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "Codex ↔ Claude Advisor/Worker plugin",
   "author": {
     "name": "florian583"
