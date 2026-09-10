@@ -1,0 +1,12 @@
+{
+  "name": "codex-cc-advisor-worker-orchestration",
+  "owner": { "name": "florian583" },
+  "metadata": { "description": "Codex CLI and Claude Code advisor-worker communication." },
+  "plugins": [
+    {
+      "name": "advisor-worker-orchestration",
+      "source": "./",
+      "description": "Exact-session Codex and Claude Code advisor-worker mailboxes."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "advisor-worker-orchestration",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "ws": "^8.21.3"
+  },
+  "scripts": {
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}
