@@ -55,4 +55,14 @@ while (!(await ready())) {
     if (owned) await rmdir(lock)
   }
 }
-await import('../src/server.ts')
+// Fresh resolver process: Bun can pre-resolve a literal dynamic import before
+// bootstrap dependencies exist on a cold installation.
+const server = Bun.spawn([process.execPath, join(root, 'src/server.ts')], {
+  stdin: 'inherit',
+  stdout: 'inherit',
+  stderr: 'inherit',
+})
+for (const signal of ['SIGINT', 'SIGTERM', 'SIGHUP']) {
+  process.on(signal, () => server.kill(signal))
+}
+process.exit(await server.exited)

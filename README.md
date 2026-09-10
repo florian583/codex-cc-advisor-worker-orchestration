@@ -16,7 +16,7 @@ Codex can advise Claude Code, or either CLI can act as a worker.
 ## Claude Code: install from GitHub
 
 ```sh
-claude plugin marketplace add florian583/codex-cc-advisor-worker-orchestration
+claude plugin marketplace add https://github.com/florian583/codex-cc-advisor-worker-orchestration.git
 claude plugin install advisor-worker-orchestration@codex-cc-advisor-worker-orchestration
 ```
 
